@@ -22,27 +22,67 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Background color for the navbar */
     overflow: hidden;
+    background-color: #333; /* Navbar background color */
 }
 
 .navbar__item {
     float: left;
-    align-items: center;
 }
 
 .navbar__item a {
-    display: inline;
-    float: left;
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navbar__item a:hover {
-    background-color: #ddd; /* Background color on hover */
-    color: black; /* Text color on hover */
-  }
+    background-color: #111; /* Hover background color */
+}
+
+/* Dropdown menu styles */
+.navbar__item ul {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navbar__item ul li {
+    float: none;
+    color: white;
+}
+
+.navbar__item ul li a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.navbar__item ul li a:hover {
+    background-color: #ddd;
+}
+
+.navbar__item:hover ul {
+    display: block;
+}
+
+/* Inline list item spacing */
+.navbar__item {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar__item a {
+    text-decoration: none;
+    color: white;
+}
   
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
