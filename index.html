@@ -12,7 +12,15 @@
     <li class="navbar__item"><a href="pages/portfolio.html">Portfolio</a></li>
     <li class="navbar__item"><a href="pages/about_me.html">About Me</a></li>
     <li class="navbar__item"><a href="pages/contact.html">Contact</a></li>
-  </ul>
+    <li class="navbar__item"> <!-- Removed the class 'dropdown' which is not used in CSS -->
+        <a href="#">Visualizations</a>
+        <ul class="dropdown-content">
+            <li><a href="https://www.linkedin.com/in/drusso1001/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/drusso97" target="_blank">Github</a></li>
+            <li><a href="{{ url_for('get_regression_line') }}">Regression Lines</a></li>
+        </ul>
+    </li>
+</ul>
 
   <h1>Coming Soon</h1>
   <p>Hello, this will one day be the home of my portfolio website.</p>
