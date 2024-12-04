@@ -27,8 +27,9 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: hsl(0, 0%, 20%);
   position: relative;
+  border-radius: 5px;
 }
 
 .navbar__item {
@@ -47,45 +48,10 @@ body {
   font-weight: bold; /* More emphasis on navbar text */
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Dropdown Menu */
-.dropdown-content {
-  display: none; /* Hidden by default */
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for dropdown */
-  z-index: 1;
-  border-radius: 8px; /* Rounded corners */
-  padding: 8px 0; /* Padding for inner items */
-}
-
-.dropdown-content a {
-  padding: 12px 16px;
-  text-decoration: none;
-  color: black;
-  display: block;
-  text-align: left;
-  font-size: 14px;
-  float: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.navbar__item:hover {
+  background-color: hsl(0, 0%, 10%);
   color: black;
   border-radius: 8px;
-}
-
-/* Display dropdown on hover */
-.navbar__item:hover .dropdown-content {
-  display: block;
 }
 
 /* Input and Form Styles */
